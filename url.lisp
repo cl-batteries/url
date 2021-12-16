@@ -17,8 +17,8 @@
 ;;;; under the License.
 ;;;;
 
-(defpackage :cl-batteries/url
-  (:use :cl :base64 :cl-batteries/lexer :cl-batteries/parse)
+(defpackage :boost-url
+  (:use :cl :boost-base64 :boost-lexer :boost-parse)
   (:export
    #:with-url
 
@@ -56,7 +56,7 @@
    #:url-query
    #:url-fragment))
 
-(in-package :cl-batteries/url)
+(in-package :boost-url)
 
 ;;; ----------------------------------------------------
 
@@ -375,4 +375,4 @@
 
 (defsetf url-query-param (url param) (value)
   "Lookup a param, update or push new query value."
-  `(url::url-query-param-set ,url ,param ,value))
+  `(boost-url::url-query-param-set ,url ,param ,value))
