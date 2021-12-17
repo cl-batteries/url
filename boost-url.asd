@@ -6,4 +6,4 @@
   :description "Universal Resource Locators for Common Lisp"
   :serial t
   :components ((:file "url"))
-  :depends-on ("boost-lexer" "boost-parse"))
+  :depends-on ("boost-base64" "boost-lexer" "boost-parse"))
